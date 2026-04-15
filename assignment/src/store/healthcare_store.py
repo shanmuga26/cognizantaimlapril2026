@@ -1,48 +1,36 @@
-"""
-HealthcareStore handles storage and mapping logic between patients and doctors.
-"""
+from typing import List, Tuple, Optional, Dict
+from models.doctor import Doctor
+from models.patient import Patient
 
 class HealthcareStore:
 
-    def __init__(self):
-        self.doctors = []
-        self.patients = []
+    def __init__(self) -> None:
+        self.doctors: List[Doctor] = []
+        self.patients: List[Patient] = []
 
-        self.disease_map = {
+        self.disease_map: Dict[str, str] = {
             "Heart Attack": "Cardiologist",
             "Diabetes": "Endocrinologist",
             "Fever": "General Physician",
             "Skin Allergy": "Dermatologist"
         }
 
-    def add_doctor(self, doctor):
+    def add_doctor(self, doctor: Doctor) -> None:
         self.doctors.append(doctor)
 
-    def add_patient(self, patient):
+    def add_patient(self, patient: Patient) -> None:
         self.patients.append(patient)
 
-    def assign_doctor(self, patient):
-        """
-        Assign doctor based on disease → specialization mapping
-        """
+    def assign_doctor(self, patient: Patient) -> Optional[Doctor]:
         required_specialization = self.disease_map.get(patient.disease)
 
-        # Optional improvement: choose best doctor (highest experience)
-        eligible_doctors = [
-            doc for doc in self.doctors
-            if doc.specialty == required_specialization
-        ]
+        for doc in self.doctors:
+            if doc.specialty == required_specialization:
+                return doc
 
-        if not eligible_doctors:
-            return None
+        return None
 
-        # Pick most experienced doctor 🔥
-        return max(eligible_doctors, key=lambda d: d.years_of_experience)
-
-    def get_all_mappings(self):
-        """
-        Returns list of (patient, doctor) tuples
-        """
+    def get_all_mappings(self) -> List[Tuple[Patient, Optional[Doctor]]]:
         return [
             (patient, self.assign_doctor(patient))
             for patient in self.patients
