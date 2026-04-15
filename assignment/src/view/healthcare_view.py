@@ -3,7 +3,7 @@ View layer responsible for displaying healthcare mappings.
 """
 
 def display_mappings(mappings):
-    print("\n===== Patient → Doctor Mapping =====\n")
+    print("\n==== Patient → Doctor Mapping ====\n")
 
     for patient, doctor in mappings:
         if doctor:
