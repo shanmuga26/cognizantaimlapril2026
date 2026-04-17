@@ -157,3 +157,18 @@
 2026-04-17 06:43:31,820 - healthcare_logger - INFO - Adding appointment: Appointment(id=3901, doctor=Doctor(id=7754, name='Elizabeth Howell', specialization='Records manager'), patient=Patient(id=1739, name='Timothy Davidson', dob=1981-04-13, ailment='Learn feeling son wind campaign.'), date=1990-11-12, time=16:44:49)
 2026-04-17 06:43:31,820 - healthcare_logger - INFO - Fetching appointment with ID: 3901
 2026-04-17 06:43:31,820 - healthcare_logger - INFO - Appointment added: Appointment(id=3901, doctor=Doctor(id=7754, name='Elizabeth Howell', specialization='Records manager'), patient=Patient(id=1739, name='Timothy Davidson', dob=1981-04-13, ailment='Learn feeling son wind campaign.'), date=1990-11-12, time=16:44:49)
+2026-04-17 06:47:34,139 - healthcare_logger - INFO - app doctor agent is running...
+2026-04-17 06:47:34,140 - healthcare_logger - INFO - Adding doctor: Doctor(id=3347, name='David Pineda', specialization='Designer, fashion/clothing')
+2026-04-17 06:47:34,140 - healthcare_logger - INFO - Retrieving doctor with ID: 3347
+2026-04-17 06:47:34,140 - healthcare_logger - INFO - Doctor added: Doctor(id=3347, name='David Pineda', specialization='Designer, fashion/clothing')
+2026-04-17 06:47:34,140 - healthcare_logger - INFO - app patient agent is running...
+2026-04-17 06:47:34,140 - healthcare_logger - INFO - Adding patient: Patient(id=5605, name='Jennifer Lewis', dob=1965-08-29, ailment='Discover anyone natural authority part build high.')
+2026-04-17 06:47:34,140 - healthcare_logger - INFO - Retrieving patient with ID: 5605
+2026-04-17 06:47:34,140 - healthcare_logger - INFO - Patient added: Patient(id=5605, name='Jennifer Lewis', dob=1965-08-29, ailment='Discover anyone natural authority part build high.')
+2026-04-17 06:47:34,140 - healthcare_logger - INFO - app appointment agent is running...
+2026-04-17 06:47:34,141 - healthcare_logger - INFO - Retrieving doctor with ID: 3347
+2026-04-17 06:47:34,141 - healthcare_logger - INFO - Retrieving patient with ID: 5605
+2026-04-17 06:47:34,141 - healthcare_logger - INFO - Adding appointment: Appointment(id=9543, doctor=Doctor(id=3347, name='David Pineda', specialization='Designer, fashion/clothing'), patient=Patient(id=5605, name='Jennifer Lewis', dob=1965-08-29, ailment='Discover anyone natural authority part build high.'), date=2019-02-02, time=16:24:26)
+2026-04-17 06:47:34,141 - healthcare_logger - INFO - Fetching appointment with ID: 9543
+2026-04-17 06:47:34,141 - healthcare_logger - INFO - Appointment added: Appointment(id=9543, doctor=Doctor(id=3347, name='David Pineda', specialization='Designer, fashion/clothing'), patient=Patient(id=5605, name='Jennifer Lewis', dob=1965-08-29, ailment='Discover anyone natural authority part build high.'), date=2019-02-02, time=16:24:26)
+2026-04-17 11:55:01,109 - healthcare_logger - INFO - Mobile number updated to: 4716035656
