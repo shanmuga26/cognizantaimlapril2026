@@ -4,7 +4,7 @@ from .doctor import Doctor
 from .patient import Patient
 
 class Appointment:
-    def __init__(self, id : int, date = date, time = time,doctor : Doctor, patient : Patient):
+    def __init__(self, id : int, date, time, doctor : Doctor, patient : Patient):
         self.id = id
         self.date = date
         self.time = time
