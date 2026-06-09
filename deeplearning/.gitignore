@@ -1,0 +1,5 @@
+dlenv
+.env
+lib
+lib64
+share
