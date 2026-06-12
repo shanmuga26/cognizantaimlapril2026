@@ -1,0 +1,22 @@
+artifact_path: /workspaces/cognizantaimlapril2026/deeplearning/mlruns/0/models/m-56b10ea6977c48bb85db4279d742dbf3/artifacts
+flavors:
+  python_function:
+    data: data
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.tensorflow
+    python_version: 3.12.1
+  tensorflow:
+    code: null
+    data: data
+    keras_version: 2.21.0
+    model_type: keras
+    save_format: tf
+mlflow_version: 3.13.0
+model_id: m-56b10ea6977c48bb85db4279d742dbf3
+model_size_bytes: 59993
+model_uuid: m-56b10ea6977c48bb85db4279d742dbf3
+prompts: null
+run_id: 98e992007d2941e39d6d3ce4e9a5ba84
+utc_time_created: '2026-06-11 06:34:30.602785'
